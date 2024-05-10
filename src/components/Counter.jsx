@@ -10,9 +10,8 @@ export const Counter = () => {
     };
 
     const handleDecrement = () => {
-        valueCounter <= 0 ?
-            alert('No puede decrementar porque no se aceptan numeros negativos') :
-            setValueCounter(valueCounter - 1);
+
+        setValueCounter(valueCounter - 1);
     };
 
     const handleReset = () => {
@@ -27,7 +26,7 @@ export const Counter = () => {
                 <button onClick={handleIncrement} type="button">
                     Incrementar
                 </button>
-                <button onClick={handleDecrement} type="button">
+                <button onClick={handleDecrement} type="button" disabled={valueCounter <= 0}>
                     Decrementar
                 </button>
                 <button onClick={handleReset} type='button'>

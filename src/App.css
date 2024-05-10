@@ -1,0 +1,21 @@
+body {
+  background-color: hotpink;
+  color: white;
+}
+
+button {
+  background-color: white;
+  margin-right: 10px;
+  border: 2px solid black;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 8px;
+}
+
+.container {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  font-size: 40px;
+}

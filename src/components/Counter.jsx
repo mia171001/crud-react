@@ -18,6 +18,8 @@ export const Counter = () => {
         setValueCounter(initialState);
     }
 
+    console.log('aaaa');
+
     return (
         <section>
             <h2>Counter APP : {valueCounter}</h2>

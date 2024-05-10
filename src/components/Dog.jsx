@@ -3,8 +3,11 @@ export const Dog = ({ dog }) => {
     return (
         <article>
             <ul>
-                <li>{dog.name}</li>
-
+                <li>Name: {dog.name}</li>
+                <br />
+                <li>Temperamento: {dog.temperament.map((listTemp) => (
+                    <div key={dog.id + listTemp}>{listTemp}</div>
+                ))}</li>
             </ul>
         </article>
     );
